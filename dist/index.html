@@ -1,0 +1,114 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Signup Form</title>
+</head>
+<body>
+  <section id="main">
+    <div class="container flex mx-auto md:flex-row">
+      <!-- left item -->
+      <div class="flex flex-col space-y-12 md:w-2/4">
+    
+          <h1 class="text-4xl font-bold text-center mt-20 md:mt-40  md:text-5xl">Signup</h1>
+          <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit modi voluptatum doloremque minima!</p>
+
+          <div class="-ml-20  mt-10 step-wizard">
+            <ul class="step-wizard-list">
+              <li class="step-wizard-item current-item">
+                <span class="progress-count">1</span>
+              </li>
+              <li class="step-wizard-item">
+                <span class="progress-count">2</span>
+              </li>
+              <li class="step-wizard-item">
+                <span class="progress-count">3</span>
+              </li>
+            </ul>
+          </div>
+          <form class="w-full max-w-lg">
+            <div class="flex flex-wrap -mx-1 mb-6">
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>    
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="Your Name" required>
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>                
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="Your Home Address" required>
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-3">
+                <div class="relative">
+                  <select class="block appearance-none w-full bg-white-200 border border-gray-200 text-gray-700 
+                  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+                  id="grid-state">
+                    <option value="">Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>  
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none"  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>                
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="State Of Origin" required>
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-6">
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" 
+                id="grid-last-name" type="date" placeholder="">
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none"  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>                
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="Nationalty" required>
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                </svg>                
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="Place Of Birth" required>
+              </div>
+              <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                </svg>
+                <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
+                rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 pr-3 pl-10" 
+                id="grid-last-name" type="text" placeholder="Previous Primary School" required>
+              </div>
+            </div>
+            <div class="flex flex-row item-center mt-10 mb-10 py-3 px-4 space-x-6">
+              <a href="index.html" class="w-3/6 border border-blue-500 py-2 text-gray-500 hover:bg-gray-200 text-center rounded">Prev</a>
+              <a href="index2.html" class="w-3/6 border py-2 rounded text-white bg-blue-500 hover:bg-blue-700 text-center">Submit</a>
+          </div>
+          </form>
+      </div>
+      <!-- right item -->
+      <div class="hidden md:block mt-0 flex-col w-3/6">
+        <img src="img/graduation.jpg" alt="" class=" float-right">
+    </div>
+  </section>
+</body>
+</html>
