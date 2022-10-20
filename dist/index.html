@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
 </head>
 <body>
   <section id="main">
-    <div class="container flex mx-auto md:flex-row">
+    <div class=" flex flex-col md:flex-row w-full">
       <!-- left item -->
-      <div class="flex flex-col space-y-12 md:w-2/4">
+      <div class="flex flex-col space-y-12 md:w-3/6">
     
-          <h1 class="text-4xl font-bold text-center mt-20 md:mt-40  md:text-5xl">Signup</h1>
-          <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit modi voluptatum doloremque minima!</p>
+          <h1 class="text-4xl font-bold text-center mt-10 md:mt-20  md:text-5xl">Signup</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit modi voluptatum doloremque minima!</p>
 
-          <div class="-ml-20  mt-10 step-wizard">
+          <div class="mt-5 pr-3 step-wizard">
             <ul class="step-wizard-list">
               <li class="step-wizard-item current-item">
                 <span class="progress-count">1</span>
@@ -28,7 +28,7 @@
               </li>
             </ul>
           </div>
-          <form class="w-full max-w-lg">
+          <form class="w-full max-w-lg md:mx-auto">
             <div class="flex flex-wrap -mx-1 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-6 relative flex item-center text-gray-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor" class="w-6 h-6">
@@ -72,7 +72,7 @@
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-6">
                 <input class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-200 
                 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" 
-                id="grid-last-name" type="date" placeholder="">
+                id="grid-last-name" type="date" placeholder="Date" onfocus="(this.type='date')">
               </div>
               <div class="w-full md:w-1/2 px-3 mb-6 relative flex item-center text-gray-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none"  stroke="currentColor" class="w-6 h-6">
@@ -100,14 +100,14 @@
               </div>
             </div>
             <div class="flex flex-row item-center mt-10 mb-10 py-3 px-4 space-x-6">
-              <a href="index.html" class="w-3/6 border border-blue-500 py-2 text-gray-500 hover:bg-gray-200 text-center rounded">Prev</a>
-              <a href="index2.html" class="w-3/6 border py-2 rounded text-white bg-blue-500 hover:bg-blue-700 text-center">Submit</a>
+              <a href="index.html" class="w-3/6 border border-blue-500 py-2 text-gray-500 hover:bg-gray-100 text-center rounded">Prev</a>
+              <a href="index2.html" class="w-3/6 border py-2 rounded text-white bg-blue-500 hover:bg-blue-300 text-center">Submit</a>
           </div>
           </form>
       </div>
       <!-- right item -->
-      <div class="hidden md:block mt-0 flex-col w-3/6">
-        <img src="img/graduation.jpg" alt="" class=" float-right">
+      <div class="hidden md:block w-3/6 ml-20 mr-0 h-fit">
+        <img src="img/graduation.jpg" >
     </div>
   </section>
 </body>
