@@ -588,6 +588,10 @@ video {
   right: 5rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -924,6 +928,11 @@ video {
     margin-right: 1.5rem;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mt-48 {
     margin-top: 12rem;
   }
@@ -946,6 +955,10 @@ video {
 
   .md\:w-10\/12 {
     width: 83.333333%;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
   }
 
   .md\:grid-cols-2 {

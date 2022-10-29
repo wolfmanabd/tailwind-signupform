@@ -22,24 +22,24 @@
               </div>
             </div>
           </div>
-          <form class="mx-auto mt-20">
-            <div class="grid grid-cols-1 mx-auto md:grid-cols-2 gap-x-8 mb-6">
+          <form class="md:mx-auto mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 mb-6">
               <div class="w-full mb-6 relative flex item-center text-gray-500">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 absolute ml-3 mt-2.5 pointer-event-none" stroke="currentColor" >
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>    
-                <input class="appearance-none block w-56 h-10 text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full  md:w-56 h-10 text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-none focus:border-blue-500 pr-3 pl-10" 
                 id="grid-last-name" type="text" placeholder="Your Name" required>
               </div>
               <div class="w-full mb-6 relative text-gray-500">                
-                <input class="appearance-none block w-56 h-10 text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full md:w-56 h-10 text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-none focus:border-blue-500 pr-3 pl-6" 
                 id="grid-last-name" type="text" placeholder="Your Home Address" required>
               </div>
               <div class="w-full mb-6 md:mb-3">
                 <div class="relative">
-                  <select class="block appearance-none w-56 h-10 border border-gray-500 text-gray-700 
+                  <select class="block appearance-none w-full md:w-56 h-10 border border-gray-500 text-gray-700 
                   py-1 pr-3 pl-6 rounded-lg leading-tight focus:outline-none focus:border-blue-500"
                   id="grid-state">
                     <option value="">Gender</option>
@@ -52,18 +52,18 @@
                 </div>  
               </div>
               <div class="w-full mb-6 relative flex text-gray-500">              
-                <input class="appearance-none block w-56 h-10 text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full md:w-56 h-10 text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-none focus:border-blue-500 pr-3 pl-6" 
                 id="grid-last-name" type="text" placeholder="State Of Origin" required >
               </div>
               <div class="w-full mb-6 md:mb-6">
-                <input class="appearance-none block w-56 h-10  text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full md:w-56 h-10  text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-none focus:border-blue-500 pr-3 pl-6" 
                 id="grid-last-name" type="text" onfocus="(this.type='date')" placeholder="Date">
               </div>
               <div class="w-full  mb-6 md:mb-3">
                 <div class="relative">
-                  <select class="block appearance-none w-56 h-10  border border-gray-500 text-gray-700 
+                  <select class="block appearance-none w-full md:w-56 h-10  border border-gray-500 text-gray-700 
                   py-1  pr-3 pl-6 rounded-lg leading-tight focus:outline-none focus:border-blue-500"
                   id="grid-state">
                   <option value="">Nationalty</option>
@@ -266,19 +266,19 @@
                 </div>  
               </div>
               <div class="w-full mb-6 relative flex item-center text-gray-500">              
-                <input class="appearance-none block w-56 h-10  text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full md:w-56 h-10  text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-no focus:border-blue-500 pr-3 pl-6" 
                 id="grid-last-name" type="text" placeholder="Place Of Birth" required>
               </div>
               <div class="w-full mb-6 relative flex item-center text-gray-500">
-                <input class="appearance-none block w-56 h-10  text-gray-700 border border-gray-500 
+                <input class="appearance-none block w-full md:w-56 h-10  text-gray-700 border border-gray-500 
                 rounded-lg py-3 leading-tight focus:outline-none focus:border-blue-500 pr-3 pl-6" 
                 id="grid-last-name" type="text" placeholder="Previous Primary School" required>
               </div>
             </div>
             <div class="flex justify-around my-20 ">
-              <a href="index.html" class="bg-blue-200 py-3 px-8 md:py-4 md:px-16 text-blue-500 text-center rounded-lg md:mx-6">Prev</a>
-              <a href="index2.html" class="py-3 px-8 md:py-4 md:px-16 rounded-lg text-white bg-blue-500 hover:bg-blue-300 text-center md:mx-6">Next</a>
+              <button type="submit"  class="border border-blue-500 py-3 px-8 md:py-4 md:px-16 text-blue-500 text-center rounded-lg hover:bg-blue-300 mx-6"><a href="index.html" ></a>Prev</button>
+              <button type="submit" class="py-3 px-8 md:py-4 md:px-16 rounded-lg text-white bg-blue-500 hover:bg-blue-300 text-center mr-6"><a href="index2.html" ></a>Next</button>
             </div>
           </form>
       </div>
