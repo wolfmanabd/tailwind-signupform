@@ -2,98 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-.step-wizard {
+
+
+.progress {
+    display: flex;
+    margin: 0 auto 10px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 300px;
+    max-width: 100%;
+}
+
+.progress::before {
+    content: "";
+    width: 100%;
+    background-color: #ccc;
+    height: 2px;
+    position: absolute;
+    z-index: -1;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #3b82f6;
+    border: 2px solid #3b82f6;
+    color: #fff;
+    border-radius: 50%;
 }
 
-.step-wizard-list {
-    list-style: none;
-    display: flex;
-    padding: 20px 10px;
-    position: relative;
-    z-index: 10;
-}
 
-.step-wizard-item {
-    padding: 0 20px;
-    flex-basis: 0;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-width: 100px;
-    position: relative;
-}
-
-.step-wizard-item + .step-wizard-item::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 18px;
-    background: #21d4fd;
-    width: 100%;
-    height: 2px;
-    transform: translateX(-50%);
-    z-index: -10;
-}
-
-.progress-count {
+.active {
     height: 40px;
     width: 40px;
+    color: #fff;
     display: flex;
-    align-items: center;
+    border: 2px solid #3b82f6;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    font-weight: 600;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    color: transparent;
+    z-index: -1;
 }
 
-.progress-count:after {
+.active::before {
     content: "";
-    height: 30px;
-    width: 30px;
-    background: #21d4fd;
+    width: 50%;
+    background: #3b82f6;
+    height: 2px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% -50%);
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.progress-count:before {
-    content: "";
-    height: 10px;
-    width: 20px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    position: absolute;
-    left: 90%;
-    top: 90%;
-    transform: translate(-50%, -60%) rotate(-45deg);
-    transform-origin: center center;
-    z-index: 20;
-}
-
-.current-item .progress-count:before,
-.current-item ~ .step-wizard-item .progress-count:before {
-    display: none;
-}
-
-.current-item ~ .step-wizard-item .progress-count:after {
-    height: 30px;
-    width: 30px;
-}
-
-.current-item .progress-count:after {
-    background: #fff;
-    border: 2px solid #21d4fd;
+    z-index: -2;
 }
